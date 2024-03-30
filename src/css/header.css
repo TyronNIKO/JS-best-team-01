@@ -1,1 +1,24 @@
 /* <!-- Header --> */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: auto;
+}
+
+@media screen and (min-width: 1215px) {
+  .header-container {
+    width: 1215px;
+  }
+}
+
+.header-nav {
+}
+.header-nav-item {
+}
+.header-nav-link {
+}
+.header-button-list {
+}
+.header-button-list-item {
+}
