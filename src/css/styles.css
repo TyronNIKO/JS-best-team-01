@@ -5,8 +5,18 @@
   |============================
 */
 @import url('./reset.css');
+@import url('./common.css');
 @import url('./header.css');
 @import url('./hero-section.css');
+@import url('./achievements.css');
+@import url('./calender.css');
+@import url('./cca-above-footer.css');
+@import url('./clients.css');
+@import url('./community-updates.css');
+@import url('./community.css');
+@import url('./customers.css');
+@import url('./unlock.css');
+@import url('./footer.css');
 
 :root {
     --font-family: "Inter", sans-serif;
