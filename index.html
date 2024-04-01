@@ -8,7 +8,9 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" rel="stylesheet" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer">
     
     <script type="module" crossorigin src="/JS-best-team-01/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/JS-best-team-01/assets/index-c8143920.css">
+    <link rel="modulepreload" crossorigin href="/JS-best-team-01/assets/vendor-544adac3.js">
+    <link rel="stylesheet" href="/JS-best-team-01/assets/vendor-0ded8c46.css">
+    <link rel="stylesheet" href="/JS-best-team-01/assets/index-f912484f.css">
   </head>
   <body>
     <!-- Header -->
@@ -17,7 +19,7 @@
     <nav class="header-nav">
       <a class="header-nav-link" href="./index.html">
         <svg class="header-logo" width="155" height="24">
-          <use href="../img/sprites.svg#header-icon-Logo"></use>
+          <use href="../img/sprites.svg#header-icon-logo"></use>
         </svg>
       </a>
       <ul class="header-nav-list">
@@ -46,17 +48,59 @@
         <button class="header-btn">Login</button>
       </li>
       <li class="header-button-list-item">
-        <button class="header-btn">Sign up</button>
+        <button class="btn-primary header-btn">Sign up</button>
       </li>
     </ul>
   </div>
 </header>
 
     <main>
-        <!-- Hero Section -->
-<p class="text-red">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil explicabo neque officiis, magni in eius, quam eum molestiae, reprehenderit cum ducimus aperiam architecto adipisci recusandae voluptas ipsa deserunt enim. Maiores.</p>
-<p class="text-yellow">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil explicabo neque officiis, magni in eius, quam eum molestiae, reprehenderit cum ducimus aperiam architecto adipisci recusandae voluptas ipsa deserunt enim. Maiores.</p>
-<p class="text-green">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil explicabo neque officiis, magni in eius, quam eum molestiae, reprehenderit cum ducimus aperiam architecto adipisci recusandae voluptas ipsa deserunt enim. Maiores.</p>
+        <section class="hero">
+    <div class="container hero-container">
+        <h1 class="visually-hidden">Nexcent - your security system</h1>
+        <div class="slider swiper mySwiper">
+            <ul class="slider-list swiper-wrapper">
+                <li class="slider-list-item swiper-slide">
+                    <div class="hero-slide">
+                        <div class="hero-slide-content">
+                            <h2 class="hero-slide-title">Lessons and insights <span class="hero-slide-title-primary">from 8 years</span></h2>
+                            <p>Where to grow your business as a photographer: site or social media?</p>
+                            <button class="btn-primary" type="button">Register</button>
+                        </div>
+                        <svg class="icon" width="391" height="407">
+                            <use href="../img/sprites.svg#picture-hero-illustration"></use>
+                        </svg>
+                    </div>
+                </li>
+                <li class="slider-list-item swiper-slide">
+                    <div class="hero-slide">
+                        <div class="hero-slide-content">
+                            <h2 class="hero-slide-title">Lessons and insights <span class="hero-slide-title-primary">from 8 years</span></h2>
+                            <p>Where to grow your business as a photographer: site or social media?</p>
+                            <button class="btn-primary" type="button">Register</button>
+                        </div>
+                        <svg class="icon" width="391" height="407">
+                            <use href="../img/sprites.svg#picture-hero-illustration"></use>
+                        </svg>
+                    </div>
+                </li>
+                <li class="slider-list-item swiper-slide">
+                    <div class="hero-slide">
+                        <div class="hero-slide-content">
+                            <h2 class="hero-slide-title">Lessons and insights <span class="hero-slide-title-primary">from 8 years</span></h2>
+                            <p>Where to grow your business as a photographer: site or social media?</p>
+                            <button class="btn-primary" type="button">Register</button>
+                        </div>
+                        <svg class="icon" width="391" height="407">
+                            <use href="../img/sprites.svg#picture-hero-illustration"></use>
+                        </svg>
+                    </div>
+                </li>
+            </ul>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</section>
         <!-- Clients -->
         <!-- Community -->
         <!-- Unlock -->
