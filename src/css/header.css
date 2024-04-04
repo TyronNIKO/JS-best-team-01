@@ -9,6 +9,7 @@
 .header-container {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   margin: auto;
 }
@@ -30,12 +31,8 @@
 .header-nav-item-link {
   position: relative;
 }
-.header-nav-item-link:hover,
-.header-nav-item-link:focus {
-  /* color: var(--brand-primary);
-  text-decoration: underline; */
-}
-.header-nav-item-link::after {
+.header-nav-item-link:hover:after,
+.header-nav-item-link:focus:after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -44,7 +41,9 @@
   border: 1px solid var(--brand-primary);
   border-radius: 1px;
 }
-
+.header-nav-item-link::after {
+}
+/* // */
 .header-button-list {
   display: flex;
   gap: 14px;

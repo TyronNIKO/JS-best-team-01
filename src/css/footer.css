@@ -24,6 +24,11 @@ a {
     text-align: center;
   }
   .footer-logo-icon {
+    transition: scale 250ms ease-out;
+  }
+  .footer-logo-icon:hover,
+  .footer-logo-icon:focus {
+    scale: 1.1;
   }
   .footer-text {
     margin-bottom: 10px;
@@ -32,6 +37,22 @@ a {
     display: flex;
     justify-content: center;
     column-gap: 16px;
+  }
+  .footer-social-item {
+    fill: --neutral-l-grey;
+  }
+  .footer-social-icon {
+    fill: var(--neutral-white);
+    background-color: var(--neutral-d-grey);
+    border-radius: 50%;
+    transition: fill 250ms ease-out, background-color 250ms ease-out,
+      border-radius 250ms ease-out;
+  }
+  .footer-social-icon:hover,
+  .footer-social-icon:focus {
+    fill: var(--neutral-d-grey);
+    background-color: var(--neutral-white);
+    border-radius: 50%;
   }
   .footer-nav-list {
     display: none;
@@ -53,6 +74,11 @@ a {
     font-size: 14px;
     line-height: 1.42857;
     color: var(--neutral-silver);
+    transition: scale 250ms ease-out;
+  }
+  .footer-description-link:hover,
+  .footer-description-link:focus {
+    scale: 1.1;
   }
   .footer-form {
     width: 255px;
@@ -88,6 +114,13 @@ a {
     right: 12px;
     bottom: 11px;
     opacity: 0.2;
+    transition: cursor 3000ms ease-out;
+    /* ===========================
+    /чомусь не діє плавний перехід\
+    ==============================\ */
+  }
+  .footer-form-icon {
+    cursor: pointer;
   }
   .footer-button {
     position: absolute;
@@ -95,7 +128,7 @@ a {
     background-color: transparent;
   }
   .footer-button-icon {
-    fill: #d9dbe1;
+    fill: var(--neutral-white);
   }
 }
 @media screen and (min-width: 768px) {
@@ -112,8 +145,6 @@ a {
   .footer-logo {
     margin-bottom: 40px;
     text-align: start;
-  }
-  .footer-logo-icon {
   }
   .footer-text {
     margin-bottom: 40px;
