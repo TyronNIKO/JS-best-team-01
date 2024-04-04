@@ -1,1 +1,299 @@
-/* <!-- Footer --> */
+a {
+  display: inline-block;
+}
+.footer {
+  background-color: var(--neutral-black);
+  position: relative;
+}
+@media screen and (min-width: 320px) {
+  .footer-container {
+    max-width: 370px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px 0;
+  }
+  .footer-social {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .footer-logo {
+    text-align: center;
+  }
+  .footer-logo-icon {
+    transition: scale 250ms ease-out;
+  }
+  .footer-logo-icon:hover,
+  .footer-logo-icon:focus {
+    scale: 1.1;
+  }
+  .footer-text {
+    margin-bottom: 10px;
+  }
+  .footer-social-list {
+    display: flex;
+    justify-content: center;
+    column-gap: 16px;
+  }
+  .footer-social-item {
+    fill: --neutral-l-grey;
+  }
+  .footer-social-icon {
+    fill: var(--neutral-white);
+    background-color: var(--neutral-d-grey);
+    border-radius: 50%;
+    transition: fill 250ms ease-out, background-color 250ms ease-out,
+      border-radius 250ms ease-out;
+  }
+  .footer-social-icon:hover,
+  .footer-social-icon:focus {
+    fill: var(--neutral-d-grey);
+    background-color: var(--neutral-white);
+    border-radius: 50%;
+  }
+  .footer-nav-list {
+    display: none;
+  }
+  .footer-nav-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.4;
+    color: var(--neutral-white);
+    margin-bottom: 24px;
+  }
+  .footer-description-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .footer-description-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: var(--neutral-silver);
+    transition: scale 250ms ease-out;
+  }
+  .footer-description-link:hover,
+  .footer-description-link:focus {
+    scale: 1.1;
+  }
+  .footer-form {
+    width: 255px;
+    height: 92px;
+    margin-bottom: 20px;
+  }
+  .footer-form-label {
+    text-align: center;
+    position: relative;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.4;
+    color: var(--neutral-white);
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .footer-form-input {
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    background: var(--neutral-white);
+    opacity: 0.2;
+  }
+  .footer-form-input::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #d9dbe1;
+  }
+  .footer-form-icon {
+    position: absolute;
+    right: 12px;
+    bottom: 11px;
+    opacity: 0.2;
+    transition: cursor 3000ms ease-out;
+    /* ===========================
+    /чомусь не діє плавний перехід\
+    ==============================\ */
+  }
+  .footer-form-icon {
+    cursor: pointer;
+  }
+  .footer-button {
+    position: absolute;
+    bottom: 0;
+    background-color: transparent;
+  }
+  .footer-button-icon {
+    fill: var(--neutral-white);
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer-container {
+    max-width: 768px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 60px;
+    padding: 64px 0;
+  }
+  .footer-social {
+  }
+  .footer-logo {
+    margin-bottom: 40px;
+    text-align: start;
+  }
+  .footer-text {
+    margin-bottom: 40px;
+  }
+  .footer-social-list {
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 16px;
+  }
+  .footer-nav {
+    display: flex;
+    gap: 30px;
+  }
+  .footer-nav-list {
+    display: flex;
+    gap: 30px;
+  }
+  .footer-nav-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.4;
+    color: var(--neutral-white);
+    margin-bottom: 24px;
+  }
+  .footer-description-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .footer-description-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: var(--neutral-silver);
+  }
+  .footer-form {
+    width: 255px;
+    height: 40px;
+  }
+  .footer-form-label {
+    position: relative;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.4;
+    color: var(--neutral-white);
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .footer-form-input {
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    background: var(--neutral-white);
+    opacity: 0.2;
+  }
+  .footer-form-input::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #d9dbe1;
+  }
+  .footer-form-icon {
+    position: absolute;
+    right: 12px;
+    bottom: 11px;
+    opacity: 0.2;
+  }
+  .footer-button {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-container {
+    max-width: 1200px;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 125px;
+    padding: 64px 0;
+  }
+  .footer-logo {
+    margin-bottom: 40px;
+  }
+  .footer-logo-icon {
+  }
+  .footer-text {
+    margin-bottom: 40px;
+  }
+  .footer-social-list {
+    display: flex;
+    column-gap: 16px;
+  }
+  .footer-nav {
+    display: flex;
+    gap: 30px;
+  }
+  .footer-nav-list {
+    gap: 30px;
+  }
+  .footer-nav-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.4;
+    color: var(--neutral-white);
+    margin-bottom: 24px;
+  }
+  .footer-description-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .footer-description-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: var(--neutral-silver);
+  }
+  .footer-form {
+    width: 255px;
+    height: 40px;
+  }
+  .footer-form-label {
+    position: relative;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.4;
+    color: var(--neutral-white);
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .footer-form-input {
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    background: var(--neutral-white);
+    opacity: 0.2;
+  }
+  .footer-form-input::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.42857;
+    color: #d9dbe1;
+  }
+  .footer-form-icon {
+    position: absolute;
+    right: 12px;
+    bottom: 11px;
+    opacity: 0.2;
+  }
+}
