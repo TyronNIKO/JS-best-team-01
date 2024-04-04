@@ -11,11 +11,11 @@ export const swiper = new Swiper('.swiper', {
   // configure Swiper to use modules
   modules: [Navigation, Pagination, Autoplay],
   slidesPerView: 1,
-  spaceBetween: 30,
+  spaceBetween: 0,
   centeredSlides: true,
   loop: true,
   autoplay: {
-    delay: 2500,
+    delay: 3000,
     disableOnInteraction: true,
   },
   pagination: {
