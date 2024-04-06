@@ -3,21 +3,22 @@ a {
 }
 .footer {
   background-color: var(--neutral-black);
-  position: relative;
 }
 @media screen and (min-width: 320px) {
   .footer-container {
-    max-width: 370px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 16px;
-    padding: 16px 0;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    position: relative;
   }
   .footer-social {
     display: flex;
     flex-direction: column;
+    position: static;
     gap: 6px;
   }
   .footer-logo {
@@ -56,6 +57,18 @@ a {
   }
   .footer-nav-list {
     display: none;
+    transition: transform 400ms ease-out;
+  }
+  .es-open {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 999;
+    background-color: var(--neutral-black);
+    top: 0;
+    transform: translateY(0);
+    width: 260px;
+    height: 270px;
   }
   .footer-nav-title {
     font-weight: 600;
@@ -82,7 +95,6 @@ a {
   }
   .footer-form {
     width: 255px;
-    height: 92px;
     margin-bottom: 20px;
   }
   .footer-form-label {
@@ -114,13 +126,11 @@ a {
     right: 12px;
     bottom: 11px;
     opacity: 0.2;
+    cursor: pointer;
     transition: cursor 3000ms ease-out;
     /* ===========================
     /чомусь не діє плавний перехід\
     ==============================\ */
-  }
-  .footer-form-icon {
-    cursor: pointer;
   }
   .footer-button {
     position: absolute;
@@ -130,17 +140,25 @@ a {
   .footer-button-icon {
     fill: var(--neutral-white);
   }
+  .es-hiden {
+    display: none;
+  }
+  .es-visible {
+    display: block;
+  }
 }
 @media screen and (min-width: 768px) {
   .footer-container {
-    max-width: 768px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    gap: 60px;
-    padding: 64px 0;
+    align-items: flex-start;
+    gap: 0;
+    padding-top: 64px;
+    padding-bottom: 64px;
   }
   .footer-social {
+    width: 350px;
   }
   .footer-logo {
     margin-bottom: 40px;
@@ -150,17 +168,18 @@ a {
     margin-bottom: 40px;
   }
   .footer-social-list {
-    display: flex;
     justify-content: flex-start;
-    column-gap: 16px;
   }
   .footer-nav {
     display: flex;
-    gap: 30px;
+    gap: 0;
   }
   .footer-nav-list {
     display: flex;
-    gap: 30px;
+    gap: 0;
+  }
+  .footer-nav-item {
+    width: 130px;
   }
   .footer-nav-title {
     font-weight: 600;
@@ -181,119 +200,23 @@ a {
     color: var(--neutral-silver);
   }
   .footer-form {
-    width: 255px;
-    height: 40px;
-  }
-  .footer-form-label {
-    position: relative;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 1.4;
-    color: var(--neutral-white);
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-  }
-  .footer-form-input {
-    height: 40px;
-    border: none;
-    border-radius: 8px;
-    background: var(--neutral-white);
-    opacity: 0.2;
-  }
-  .footer-form-input::placeholder {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.42857;
-    color: #d9dbe1;
-  }
-  .footer-form-icon {
-    position: absolute;
-    right: 12px;
-    bottom: 11px;
-    opacity: 0.2;
+    width: 200px;
   }
   .footer-button {
     display: none;
   }
 }
 @media screen and (min-width: 1200px) {
-  .footer-container {
-    max-width: 1200px;
-    justify-content: center;
-    display: flex;
-    flex-direction: row;
-    gap: 125px;
-    padding: 64px 0;
-  }
-  .footer-logo {
-    margin-bottom: 40px;
-  }
-  .footer-logo-icon {
-  }
-  .footer-text {
-    margin-bottom: 40px;
-  }
-  .footer-social-list {
-    display: flex;
-    column-gap: 16px;
-  }
   .footer-nav {
-    display: flex;
     gap: 30px;
   }
   .footer-nav-list {
     gap: 30px;
   }
-  .footer-nav-title {
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 1.4;
-    color: var(--neutral-white);
-    margin-bottom: 24px;
-  }
-  .footer-description-list {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
-  .footer-description-link {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.42857;
-    color: var(--neutral-silver);
+  .footer-nav-item {
+    width: 160px;
   }
   .footer-form {
     width: 255px;
-    height: 40px;
-  }
-  .footer-form-label {
-    position: relative;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 1.4;
-    color: var(--neutral-white);
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-  }
-  .footer-form-input {
-    height: 40px;
-    border: none;
-    border-radius: 8px;
-    background: var(--neutral-white);
-    opacity: 0.2;
-  }
-  .footer-form-input::placeholder {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.42857;
-    color: #d9dbe1;
-  }
-  .footer-form-icon {
-    position: absolute;
-    right: 12px;
-    bottom: 11px;
-    opacity: 0.2;
   }
 }
