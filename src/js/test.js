@@ -40,9 +40,10 @@ let productData = [
     curency: '$',
   },
 ];
-console.log(productData);
+// console.log(productData);
 
 let list = document.querySelector('.catalog-list');
+productData.map(item => {});
 
 for (let index = 0; index < productData.length; index++) {
   let card = `
@@ -56,6 +57,11 @@ for (let index = 0; index < productData.length; index++) {
             <button class="product-card-btn" type="button">Order</button>
         </div>
     </li>
-  `;
+    `;
   list.insertAdjacentHTML('afterbegin', card);
 }
+function doMath(param1, param2) {
+  return param1 + param2;
+}
+let result = doMath(5, 11);
+console.log(result);

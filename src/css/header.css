@@ -98,10 +98,10 @@
   }
   .header-btn {
     padding: 5px 10px;
-    font-size: 14px;
     border: 2px solid transparent;
     border-radius: 4px;
     font-weight: 500;
+    font-size: 14px;
     font-size: 16px;
     font-family: var(--font-family);
     line-height: 1.5;
@@ -136,31 +136,46 @@
 
 /* Form */
 .form-container {
-  width: 300px;
-  padding: 16px;
-  background-color: var(--neutral-white);
+  /* width: 300px; */
+  padding: 30px;
+  /* background-color: var(--neutral-white); */
 }
-input[type='text'],
-input[type='number'] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
+.form-order {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 30px;
+    border: 1px solid var(--brand-primary);
+    border-radius: 8px;
+    background-color: var(--neutral-silver);
+}
+.form-group {
+    width: calc((100% - 30px) / 2);
+}
+.form-sizes {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+.form-order input[type='text'],
+.form-order input[type='number'] {
   display: inline-block;
+  width: 100%;
+  margin: 5px 0 22px 0;
+  padding: 15px;
   border: none;
   background: var(--neutral-white);
 }
-input[type='text']:focus,
-input[type='number']:focus {
+.form-order input[type='text']:focus,
+.form-order input[type='number']:focus {
   background-color: var(-neutral-silver);
   outline: none;
 }
+.form-order input[name=currency] {
+    margin-right: 10px;
+}
 .submit-button {
-  background-color: var(--shade-s1);
-  color: var(--neutral-white);
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  width: 100%;
+  margin-left: auto;
   opacity: 0.9;
 }
 .submit-button:hover {
