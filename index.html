@@ -10,7 +10,7 @@
     <script type="module" crossorigin src="/JS-best-team-01/commonHelpers.js"></script>
     <link rel="modulepreload" crossorigin href="/JS-best-team-01/assets/vendor-544adac3.js">
     <link rel="stylesheet" href="/JS-best-team-01/assets/vendor-0ded8c46.css">
-    <link rel="stylesheet" href="/JS-best-team-01/assets/index-89edebdb.css">
+    <link rel="stylesheet" href="/JS-best-team-01/assets/index-dfdcaf3d.css">
   </head>
   <body>
     <!-- Header -->
@@ -52,6 +52,64 @@
       </li>
     </ul>
   </div>
+  <!-- Form -->
+  <div class="form-container">
+    <form>
+      <label for="product-name">Назва товару</label>
+      <input
+        name="product-name"
+        type="text"
+        placeholder="Введіть назву товару"
+        required
+      />
+
+      <label for="product-quantity">Кількість</label>
+      <input
+        name="product-quantity"
+        type="number"
+        placeholder="Введіть кількість"
+        required
+      />
+
+      <label
+        >Габарити
+        <input
+          name="product-width"
+          type="text"
+          placeholder="Введіть ширину"
+          required
+        />
+        <input
+          name="product-length"
+          type="text"
+          placeholder="Введіть довжину"
+          required
+        />
+        <input
+          name="product-height"
+          type="text"
+          placeholder="Введіть висоту"
+          required
+        />
+      </label>
+
+      <label for="product-price">Вартість</label>
+      <input
+        name="product-price"
+        type="number"
+        placeholder="Введіть вартість"
+        required
+      />
+      <label
+        ><input name="currency" type="radio" value="uah" checked />uah</label
+      >
+      <label><input name="currency" type="radio" value="usd" />usd</label>
+      <label><input name="currency" type="radio" value="eur" />eur</label>
+
+      <button class="submit-button" type="submit">Надіслати</button>
+    </form>
+  </div>
+  <!-- /Form -->
 </header>
 
     <main>
