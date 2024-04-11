@@ -133,3 +133,38 @@
     line-height: 1.42857;
   }
 }
+
+/* Form */
+.form-container {
+  width: 300px;
+  padding: 16px;
+  background-color: var(--neutral-white);
+}
+input[type='text'],
+input[type='number'] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: var(--neutral-white);
+}
+input[type='text']:focus,
+input[type='number']:focus {
+  background-color: var(-neutral-silver);
+  outline: none;
+}
+.submit-button {
+  background-color: var(--shade-s1);
+  color: var(--neutral-white);
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+.submit-button:hover {
+  opacity: 1;
+}
+
+/* /Form */
