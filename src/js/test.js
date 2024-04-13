@@ -40,13 +40,11 @@ let productData = [
     curency: '$',
   },
 ];
-// console.log(productData);
 
-let list = document.querySelector('.catalog-list');
-productData.map(item => {});
-
-for (let index = 0; index < productData.length; index++) {
-  let card = `
+const addProductItemFromList = () => {
+  let list = document.querySelector('.catalog-list');
+  for (let index = 0; index < productData.length; index++) {
+    let card = `
     <li class="catalog-list-item">
         <div class="product-card product-id-${productData[index].id}">
             <h3 class="product-card-title">${productData[index].name}</h3>
@@ -58,10 +56,7 @@ for (let index = 0; index < productData.length; index++) {
         </div>
     </li>
     `;
-  list.insertAdjacentHTML('afterbegin', card);
-}
-function doMath(param1, param2) {
-  return param1 + param2;
-}
-let result = doMath(5, 11);
-console.log(result);
+    list.insertAdjacentHTML('afterbegin', card);
+  }
+};
+addProductItemFromList();
