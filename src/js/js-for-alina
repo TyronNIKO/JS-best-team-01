@@ -1,0 +1,65 @@
+// ===============this is header html==============================================
+// <!DOCTYPE html>
+// <html lang="en">
+//   <head>
+//     <meta charset="UTF-8" />
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+//     <title>home-work-js-3</title>
+//   </head>
+//   <body>
+//     <h1>Hello name greeting learn js</h1>
+//     <script src="./js/task-4.js"></script>
+//   </body>
+// </html>
+// ================================================================================
+// ===============this is reference html===========================================
+// < !DOCTYPE html >
+// <html lang="en">
+//   <head>
+//     <meta charset="UTF-8" />
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+//     <title>folder/index</title>
+//   </head>
+//   <body>
+//     <h1>hello world</h1>
+//   </body>
+// </html>
+// ================================================================================
+'use strict';
+function greeting() {
+  if (window.location.search) {
+    console.log(true);
+    let result = getUrlParams();
+    appendText('h1', result);
+  } else {
+    console.log('function no param');
+    return;
+  }
+}
+function getUrlParams() {
+  let param,
+    paramSlice,
+    paramArray = [],
+    greeting,
+    elemElem = [],
+    name,
+    hobby,
+    index = 0;
+  param = window.location.search;
+  paramSlice = param.slice(1);
+  paramArray = paramSlice.split('&');
+  for (const elem of paramArray) {
+    elemElem = elem.split('=');
+    paramArray[index] = elemElem;
+    index++;
+  }
+  name = paramArray[1][1];
+  hobby = paramArray[2][1];
+  greeting = `Hello ${name} greeting learn ${hobby}`;
+  return greeting;
+}
+function appendText(elem = 'string', text = 'callback') {
+  let header = document.querySelector(elem);
+  header.innerText = text;
+}
+greeting();
