@@ -23,4 +23,3 @@ function checkRadionButon(element) {
     ? console.dir(element.value)
     : console.log('Поле пусте!');
 }
-button;

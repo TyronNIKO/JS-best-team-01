@@ -1,45 +1,47 @@
-let productData = [
-  {
-    id: 1,
-    name: 'Name1',
-    description: 'Lorem ipsum text',
-    price: 8000,
-    img: 'https://fs0.secunda.com.ua/photo/goods/card/1/202630/202630_20230626_656_912_GA_110_1BER.jpg',
-    curency: '€',
-  },
-  {
-    id: 2,
-    name: 'Name2',
-    description: 'Lorem ipsum text',
-    price: 14000,
-    img: 'https://fs0.secunda.com.ua/photo/goods/card/1/202630/202630_20230626_656_912_GA_110_1BER.jpg',
-    curency: '€',
-  },
-  {
-    id: 3,
-    name: 'Name3',
-    description: 'Lorem ipsum text',
-    price: 3000,
-    img: 'https://fs0.secunda.com.ua/photo/goods/card/1/202630/202630_20230626_656_912_GA_110_1BER.jpg',
-    curency: '$',
-  },
-  {
-    id: 4,
-    name: 'Name4',
-    description: 'Lorem ipsum text',
-    price: 98000,
-    img: 'https://fs0.secunda.com.ua/photo/goods/card/1/202630/202630_20230626_656_912_GA_110_1BER.jpg',
-    curency: '$',
-  },
-  {
-    id: 5,
-    name: 'Name5',
-    description: 'Lorem ipsum text',
-    price: 2000,
-    img: 'https://fs0.secunda.com.ua/photo/goods/card/1/202630/202630_20230626_656_912_GA_110_1BER.jpg',
-    curency: '$',
-  },
-];
+// let productData = [
+//   {
+//     id: 1,
+//     name: 'Name1',
+//     description: 'Lorem ipsum text',
+//     price: 8000,
+//     img: 'https://fs0.secunda.com.ua/photo/goods/card/1/202630/202630_20230626_656_912_GA_110_1BER.jpg',
+//     curency: '€',
+//   },
+//   {
+//     id: 2,
+//     name: 'Name2',
+//     description: 'Lorem ipsum text',
+//     price: 14000,
+//     img: 'https://fs0.secunda.com.ua/photo/goods/card/1/202630/202630_20230626_656_912_GA_110_1BER.jpg',
+//     curency: '€',
+//   },
+//   {
+//     id: 3,
+//     name: 'Name3',
+//     description: 'Lorem ipsum text',
+//     price: 3000,
+//     img: 'https://fs0.secunda.com.ua/photo/goods/card/1/202630/202630_20230626_656_912_GA_110_1BER.jpg',
+//     curency: '$',
+//   },
+//   {
+//     id: 4,
+//     name: 'Name4',
+//     description: 'Lorem ipsum text',
+//     price: 98000,
+//     img: 'https://fs0.secunda.com.ua/photo/goods/card/1/202630/202630_20230626_656_912_GA_110_1BER.jpg',
+//     curency: '$',
+//   },
+//   {
+//     id: 5,
+//     name: 'Name5',
+//     description: 'Lorem ipsum text',
+//     price: 2000,
+//     img: 'https://fs0.secunda.com.ua/photo/goods/card/1/202630/202630_20230626_656_912_GA_110_1BER.jpg',
+//     curency: '$',
+//   },
+// ];
+
+let productData;
 
 const addProductItemFromList = () => {
   let list = document.querySelector('.catalog-list');
