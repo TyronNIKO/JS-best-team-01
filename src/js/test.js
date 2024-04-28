@@ -41,7 +41,9 @@
 //   },
 // ];
 
-let productData;
+import { productData } from 'dataBase.json';
+
+console.log(productData);
 
 const addProductItemFromList = () => {
   let list = document.querySelector('.catalog-list');
